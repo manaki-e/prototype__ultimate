@@ -3,12 +3,44 @@ $basic_border: 3px solid black;
 /* ===============================
 
 =============================== */
-.wrapper {
-  .main {
+.main {
+  top: 0px;
+  position: absolute;
+
+  .circles {
+    margin: 0;
+    padding: 0;
+
+    .circle {
+      display: inline-block;
+      top: 0px;
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border: 1px solid;
+      border-radius: 50%;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .offence {
+      border-color: blue;
+    }
+
+    .defence {
+      border-color: red;
+    }
+
+    .disc {
+      border-color: rgb(241, 245, 28);
+    }
+  }
+
+  .wrapper {
     background-color: rgb(191, 231, 207);
-    width: 100*13px;
-    height: 37*13px;
-    margin: 100px auto 0px auto;
+    width: 100 * 13px;
+    height: 37 * 13px;
+    // margin: 100px auto 0px auto;
     border: $basic_border;
     display: grid;
     grid-template-columns: 180px auto 180px;
@@ -25,31 +57,10 @@ $basic_border: 3px solid black;
       border-left: $basic_border;
     }
   }
+}
 
-  .circles {
-    margin-top: 50px;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-
-    .circle {
-      width: 40px;
-      height: 40px;
-      border: 1px solid;
-      border-radius: 20px;
-      cursor: pointer;
-    }
-
-    .offence {
-      border-color: blue;
-    }
-
-    .diffence {
-      border-color: red;
-    }
-
-    .disc {
-      border-color: rgb(187, 83, 156);
-    }
+@for $i from 0 to 15 {
+  .left-#{$i *50} {
+    left: $i * 20px;
   }
 }
