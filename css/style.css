@@ -1,0 +1,44 @@
+/* ===============================
+
+=============================== */
+.wrapper .main {
+  background-color: #bfe7cf;
+  width: 1300px;
+  height: 481px;
+  margin: 100px auto 0px auto;
+  border: 3px solid black;
+  display: grid;
+  grid-template-columns: 180px auto 180px;
+}
+.wrapper .main__left {
+  grid-column: 1/2;
+  height: 100%;
+  border-right: 3px solid black;
+}
+.wrapper .main__right {
+  grid-column: 3/4;
+  height: 100%;
+  border-left: 3px solid black;
+}
+.wrapper .circles {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.wrapper .circles .circle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.wrapper .circles .offence {
+  border-color: blue;
+}
+.wrapper .circles .diffence {
+  border-color: red;
+}
+.wrapper .circles .disc {
+  border-color: #bb539c;
+}
+/*# sourceMappingURL=style.css.map */

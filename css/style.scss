@@ -1,0 +1,55 @@
+$basic_border: 3px solid black;
+
+/* ===============================
+
+=============================== */
+.wrapper {
+  .main {
+    background-color: rgb(191, 231, 207);
+    width: 100*13px;
+    height: 37*13px;
+    margin: 100px auto 0px auto;
+    border: $basic_border;
+    display: grid;
+    grid-template-columns: 180px auto 180px;
+
+    &__left {
+      grid-column: 1/2;
+      height: 100%;
+      border-right: $basic_border;
+    }
+
+    &__right {
+      grid-column: 3/4;
+      height: 100%;
+      border-left: $basic_border;
+    }
+  }
+
+  .circles {
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    .circle {
+      width: 40px;
+      height: 40px;
+      border: 1px solid;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .offence {
+      border-color: blue;
+    }
+
+    .diffence {
+      border-color: red;
+    }
+
+    .disc {
+      border-color: rgb(187, 83, 156);
+    }
+  }
+}
