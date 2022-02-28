@@ -27,15 +27,15 @@
   border-color: red;
 }
 .main .circles .disc {
-  border-color: #c9cc07;
+  border-color: #f1f51c;
 }
 .main .wrapper {
   background-color: #bfe7cf;
   width: 1300px;
   height: 481px;
-  border: 3px solid black;
   display: grid;
   grid-template-columns: 180px auto 180px;
+  border: 3px solid black;
 }
 .main .wrapper__left {
   grid-column: 1/2;

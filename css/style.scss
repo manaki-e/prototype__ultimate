@@ -40,10 +40,9 @@ $basic_border: 3px solid black;
     background-color: rgb(191, 231, 207);
     width: 100 * 13px;
     height: 37 * 13px;
-    // margin: 100px auto 0px auto;
-    border: $basic_border;
     display: grid;
     grid-template-columns: 180px auto 180px;
+    border: $basic_border;
 
     &__left {
       grid-column: 1/2;
